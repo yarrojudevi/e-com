@@ -1,115 +1,55 @@
-<!DOCTYPE html><html><head><base href="https://yarrojudevi.github.io/project3/">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Feedback Design UI Design In HTML And CSS-Easy Tutorials</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
-
-
-  <style>*{margin:0;padding:0;font-family:poppins,sans-serif;box-sizing:border-box;outline:none}body{position:relative;width:100%;height:100%;align-items:center;justify-content:center;background-image:url(https://png.pngtree.com/thumb_back/fh260/background/20200714/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg);background-attachment:fixed;background-image:no-repeat;background-size:cover}form h1{padding:10px 0}form .id{position:relative}.id i{position:absolute;font-size:20px;top:50%;right:20px;transform:translatey(-50%)}form input{width:100%;height:50px;margin:4px 0;border:2px solid black;border-radius:3px;background-color:#c5137e;padding:0 45px 0 15px;font-size:20px}form textarea{padding:5px 15px;border:2px solid black;border-radius:3px;background-color:#c5137e;font-size:20px;width:318px;margin:4px 0}.container{position:relative;min-height:100vh;display:flex;background-attachment:fixed;align-items:center;justify-content:center;text-align:center;padding:25px 20px}.feedbackbox{background:#00fff0;padding:50px 100px;border-radius:10px;display:flex;flex-direction:column;align-items:center}.emoji{width:100px;height:100px;border-radius:50%;margin-bottom:30px;overflow:hidden}.emoji img{width:80px;margin:0 10px}#emoji{display:flex;align-self:center;transform:translate(-400px);transition:all .3s ease}.rating .fas{font-size:40px;color:#e4e4e4;cursor:pointer}form input:focus::placeholder,form textarea:focus::placeholder{padding-left:4px;border:1px solid black;color:#000;transition:all .3s ease}.btn{width:100%;padding:10px 125px;background:blue;cursor:pointer;border-radius:3px;font-size:22px;font-weight:800;border:none;outline:none}.popup{width:400px;background:#fff;border-radius:6px;position:absolute;top:0;left:50%;transform:translate(-50%,-50%) scale(.1);text-align:center;padding:0 30px 30px;color:#333;visibility:hidden;transition:transform .4s,top .4s}.popup img{width:100px;margin-top:-50px;border-radius:50%;box-shadow:0 2px 5px #0003}.popup h2{font-size:38px;font-weight:500;margin:30px 0 10px}.popup button{width:300px;margin-top:50px;background:#6fd649;border-radius:4px;font-size:18px;padding:10px 0;color:#fff;border:0;outline:none;cursor:pointer;box-shadow:0 5px 5px #0003}</style><link rel="stylesheet" href="styles.ebc62ae876a55dcd.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles.ebc62ae876a55dcd.css"></noscript></head>
-  <body>
-    <form>
-    <div class="container">
-      <div class="feedbackbox">
-    
-      <h1>Give your Feedback</h1>
-      <div class="id">
-        <input type="text" placeholder="Full Name">
-        <i class="far fa-user"></i>
-      </div>
-      <div class="id">
-        <input type="email" placeholder="Email address">
-        <i class="far fa-envelope"></i>
-        </div>
-        <div>
-        <textarea cols="22" rows="5" placeholder="Enter your opinions here.."></textarea>
-        
-      </div>
-    
-   
-    <div class="emoji">
-        <div id="emoji">
-        <img src="https://freepngimg.com/thumb/crying_emoji/36923-7-crying-emoji-file-thumb.png">
-        <img src="https://freepngimg.com/thumb/emoji/8-2-fearful-emoji-png-thumb.png">
-        <img src="https://freepngimg.com/thumb/emoji/47416-2-smiley-image-free-png-hq-thumb.png">
-        <img src="https://freepngimg.com/thumb/emoji/2-2-grinning-face-emoji-png-thumb.png">
-        <img src="https://freepngimg.com/thumb/emoji/3-2-love-hearts-eyes-emoji-png-thumb.png">
+<!DOCTYPE html><html lang="en"><head><base href="https://yarrojudevi.github.io/test-repo/">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE-edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<title>calculator</title>
+<style>*{margin:0;padding:0;box-sizing:border-box;background-color:#ecf0f3;font-family:sans-serif;outline:none}.container{height:100vh;display:flex;justify-content:center;align-items:center}.calc{background-color:#ecf0f3;padding:15px;border-radius:30px;box-shadow:inset 5px 5px 12px #fff,5px 5px 12px #00000029;display:grid;grid-template-columns:repeat(4,68px)}input{grid-column:span 4;height:70px;width:260px;background-color:#ecf0f3;box-shadow:inset -5px -5px 12px #fff,inset 5px 5px 12px #00000029;border:none;border-radius:30px;color:#464646;font-size:50px;text-align:end;margin:40px auto 30px;padding:20px}button{height:48px;width:48px;background-color:#ecf0f3;box-shadow:-5px -5px 12px #fff,5px 5px 12px #00000029;border:none;border-radius:50%;margin:8px;font-size:16px;cursor:pointer}button:hover{color:gray}.equal{width:115px;border-radius:40px;background-color:#ecf0f3;box-shadow:-5px -5px 12px #fff,5px 5px 12px #00000029}</style><link rel="stylesheet" href="styles.030d3e134965f820.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles.030d3e134965f820.css"></noscript></head>
+<body>
+	    <div class="container">
+        <div class="calc">
+          <input type="text" id="output-screen" placeholder="0">
+          <button onclick="clear()">Cl</button>
+          <button onclick="del()">Del</button>
+          <button onclick="display('%')">%</button>
+          <button onclick="display('/')">/</button>
+          <button onclick="display(7)">7</button>
+          <button onclick="display(8)">8</button>
+          <button onclick="display(9)">9</button>
+          <button onclick="display('*')">*</button>
+          <button onclick="display(4)">4</button>
+          <button onclick="display(5)">5</button>
+          <button onclick="display(6)">6</button>
+          <button onclick="display('-')">-</button>
+          <button onclick="display(1)">1</button>
+          <button onclick="display(2)">2</button>
+          <button onclick="display(3)">3</button>
+          <button onclick="display('+')">+</button>
+          <button onclick="display('.')">.</button>
+          <button onclick="display(0)">0</button>
+          <button onclick="calculate()" class="equal">=</button>
         </div>
       </div>
-      <div class="rating"> 
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-      </div>
-    <script>
-      var stars = document.getElementsByClassName("fas");
-      var emoji = document.getElementById("emoji");
-      stars[0].onclick = function(){
-        stars[0].style.color = "#ffd93b";
-        stars[1].style.color = "#e4e4e4";
-        stars[2].style.color = "#e4e4e4";
-        stars[3].style.color = "#e4e4e4";
-        stars[4].style.color = "#e4e4e4";
-        emoji.style.transform = "translatex(0)";
-      }
-      stars[1].onclick = function(){
-        stars[0].style.color = "#ffd93b";
-        stars[1].style.color = "#ffd93b";
-        stars[2].style.color = "#e4e4e4";
-        stars[3].style.color = "#e4e4e4";
-        stars[4].style.color = "#e4e4e4";
-        emoji.style.transform = "translatex(-100px)";
-      }
-      stars[2].onclick = function(){
-        stars[0].style.color = "#ffd93b";
-        stars[1].style.color = "#ffd93b";
-        stars[2].style.color = "#ffd93b";
-        stars[3].style.color = "#e4e4e4";
-        stars[4].style.color = "#e4e4e4";
-        emoji.style.transform = "translatex(-200px)";
-      }
-      stars[3].onclick = function(){
-        stars[0].style.color = "#ffd93b";
-        stars[1].style.color = "#ffd93b";
-        stars[2].style.color = "#ffd93b";
-        stars[3].style.color = "#ffd93b";
-        stars[4].style.color = "#e4e4e4";
-        emoji.style.transform = "translatex(-300px)";
-      }
-      stars[4].onclick = function(){
-        stars[0].style.color = "#ffd93b";
-        stars[1].style.color = "#ffd93b";
-        stars[2].style.color = "#ffd93b";
-        stars[3].style.color = "#ffd93b";
-        stars[4].style.color = "#ffd93b";
-        emoji.style.transform = "translatex(-400px)";
-      }
-    </script><br>
-    <button type="submit" class="btn" onclick="openPopup()">submit</button>
-    <div class="popup" id="popup">
-      <img src="https://hwchamber.co.uk/wp-content/uploads/2020/05/tick-icon-symbol-green-checkmark-isolated-vector-24026516.jpg">
-      <h2>Thank You!</h2>
-      <p>Your response has been send. Thanks!</p>
-      <button type="button" onclick="closePopup()">OK</button>
-    </div>
-
-<script>
-  let popup = document.getElementById("popup");
-
-  function openPopup(){
-    popup.classList.add("open-popup");
-  }
-
-  function closePopup(){
-    popup.classList.remove("open-popup");
-  }
-
-</script>
-
-
-</div>
-</div></form>
-
-  <script src="runtime.df8eb745cfb8711e.js" type="module"></script><script src="polyfills.50f87d4851a92110.js" type="module"></script><script src="main.4a3005ced5905ad7.js" type="module"></script>
-</body></html>
+      <script>
+        let outputscreen = document.getElementById("output-screen");
+function display(num){
+    outputscreen.value += num;
+}
+function calculate(){
+    try{
+        outputscreen.value = eval(outputscreen.value);
+    }
+    catch(err)
+    {
+        alert("invalid")
+    }
+}
+function clear(){
+    outputscreen.value = "";
+}
+function del(){
+    outputscreen.value = outputscreen.value.slice(0,-1);
+}
+      </script>
+    <script src="runtime.85fddc4793437ab4.js" type="module"></script><script src="polyfills.2e297b0d7269a959.js" type="module"></script><script src="main.8b2e43979c7db458.js" type="module"></script>
+    </body></html>
